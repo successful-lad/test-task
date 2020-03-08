@@ -1,0 +1,124 @@
+.bed {
+  height: 542px;
+  width: 204px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 0 5px;
+
+  &__container {
+    box-sizing: border-box;
+    padding: 53px 20px 41px 16px;
+    border-radius: 10px;
+    background: #F4F2EE;
+  }
+
+  &__information {
+    &__name {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 15px;
+      margin: 14px 0 18px;
+      box-sizing: border-box;
+      padding: 0 5px;
+    }
+
+    &__rating {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 31px;
+      background: #F4F2EE;
+      box-sizing: border-box;
+      padding: 0 5px;
+
+      &__star {
+        width: 105px;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 15px;
+
+      }
+    }
+
+    &__price {
+      height: 31px;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      box-sizing: border-box;
+      padding: 0 5px;
+    }
+
+    &__info {
+      line-height: 31px;
+      height: 31px;
+      font-weight: 500;
+      font-size: 12px;
+      box-sizing: border-box;
+      padding: 0 5px;
+
+      &:nth-child(2n+1) {
+        background: #F4F2EE;
+      }
+    }
+
+    &__seller {
+      display: flex;
+      align-content: center;
+      height: 31px;
+      font-size: 12px;
+      color: #5688d8;
+      margin-bottom: 15px;
+
+      &__link {
+        line-height: 31px;
+
+        &:visited {
+          color: #5688d8;
+        }
+      }
+    }
+  }
+
+  &__bottomButton {
+    height: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    &__like {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      width: 51px;
+      height: 100%;
+      background: inherit;
+      border-radius: 4px;
+      border: 2px solid #FF9F9F;
+      cursor: pointer;
+    }
+
+    &__buy {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      background: #009900;
+      border-radius: 4px;
+      border: none;
+      color: #FFFFFF;
+      width: 117px;
+      font-size: 14px;
+      cursor: pointer;
+
+      &__img {
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
